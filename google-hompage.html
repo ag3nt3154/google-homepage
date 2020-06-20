@@ -5,7 +5,105 @@
         Google
     </title>
     </head>
+    <style>
+        #logo {
+            padding-top: 180px;
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%);
+            /* background-color: aqua; */
+        }
+        #inputbox {
+            /* background-color: transparent; */
+            border: 1px solid;
+            border-color: rgba(0, 0, 0, 0.15);
+            border-radius: 25px;
+            margin: 0px;
+            padding: 5px 30px;
+            color: rgba(0, 0, 0, 0.87);
+            word-wrap: break-word;
+            outline: none;
+            display: flex;
+            flex: 100%;
+            margin-top: -37px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 34px;
+            height: 34px !important;
+            width: 450px;
+
+        }
+        .buttons {
+            background-color: #f2f2f2;
+            border: 1px solid;
+            border-radius: 4px;
+            color: #5f6368;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+        }
+        #button-container {
+            /* background-color: green; */
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-column-gap: 50px;
+            justify-items: center;
+        }
+        #translation {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            margin-top: 12px;
+            /* background-color: hotpink; */
+            display: inline-block;
+            line-height: 28px;
+        }
+        .containers {
+            display: grid;
+            grid-template-rows: 350px 30px 60px 50px;
+            /* background-color: maroon; */
+            justify-items: center;
+        }
+
+    </style>
     <body>
-        Hello world
+        <div class="containers">
+            <div>
+                <img id="logo" alt="google logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+        
+            <div>
+                <input type="text" id="inputbox">
+            </div>
+            <div id="button-container">
+                <div>
+                    <input class="buttons" value="Google Search" aria-label="Google Search" type="submit">
+                </div>
+                <div>
+                    <input class="buttons" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" type="submit">
+                </div>
+            </div>
+            <div id="translation">
+                Google offered in:
+                <a href="https://www.google.com/setprefs?sig=0_wc-khWdXjJpTlncRkFXDUqRH8mc%3D&amp;hl=zh-CN&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiqtKShy43qAhXIb30KHVMlBvYQ2ZgBCA4">
+                    中文(简体)
+                </a>
+                &nbsp
+                <a href="https://www.google.com/setprefs?sig=0_wc-khWdXjJpTlncRkFXDUqRH8mc%3D&amp;hl=ms&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiqtKShy43qAhXIb30KHVMlBvYQ2ZgBCA8">
+                    Melayu
+                </a>
+                &nbsp
+                <a href="https://www.google.com/setprefs?sig=0_wc-khWdXjJpTlncRkFXDUqRH8mc%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiqtKShy43qAhXIb30KHVMlBvYQ2ZgBCBA">
+                    தமிழ்
+                </a>
+            </div>
+        </div>
     </body>
 </html>
